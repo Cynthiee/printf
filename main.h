@@ -6,4 +6,4 @@ int main(void);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
-#endif
+#endif /* PRINTF_FUNCTIONS_H */
