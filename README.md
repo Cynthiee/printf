@@ -1,1 +1,3 @@
-printf
+The function _printf writes output to stdout. The function writes under the control of a format string that specifies how subsequent arguments (accessed via the variable-length argument facilities of standard library stdarg) are converted for output.
+
+There should be one project repository per group. The other members do not fork or clone the project to ensure only one of the team has the repository in their github account otherwise you risk scoring 0%
