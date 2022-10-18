@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 int hex_check(int, char);
 
@@ -16,7 +16,7 @@ int print_binary(va_list list)
 
 	num = va_arg(list, unsigned int);
 	if (num == 0)
-		return (_write_char('0'));
+		return (_putchar('0'));
 	if (num < 1)
 		return (-1);
 	len = base_len(num, 2);
@@ -36,7 +36,7 @@ int print_binary(va_list list)
 	rev_str = rev_string(str);
 	if (rev_str == NULL)
 		return (-1);
-	write_base(rev_str);
+	_putchar(rev_str);
 	free(str);
 	free(rev_str);
 	return (len);
@@ -57,7 +57,7 @@ int print_octal(va_list list)
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (_write_char('0'));
+		return (_putchar('0'));
 	if (num < 1)
 		return (-1);
 	len = base_len(num, 8);
@@ -98,7 +98,7 @@ int print_hex(va_list list)
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (_write_char('0'));
+		return (_putchar('0'));
 	if (num < 1)
 		return (-1);
 	len = base_len(num, 16);
@@ -144,7 +144,7 @@ int print_heX(va_list list)
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (_write_char('0'));
+		return (_putchar('0'));
 	if (num < 1)
 		return (-1);
 	len = base_len(num, 16);
